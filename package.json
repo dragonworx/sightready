@@ -1,0 +1,18 @@
+{
+  "name": "sightready",
+  "version": "1.0.0",
+  "description": "",
+  "main": "vexflow-debug.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",
+    "start": "npm run webpack",
+    "webpack": "webpack -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-loader": "^7.1.1",
+    "webpack": "^3.4.1"
+  }
+}
