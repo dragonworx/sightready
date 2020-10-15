@@ -6,13 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",
-    "start": "npm run webpack",
-    "webpack": "webpack -w"
+    "build": "npm run webpack",
+    "build:watch": "webpack -w",
+    "serve": "python -m SimpleHTTPServer 8000"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "babel-core": "^6.26.3",
     "babel-loader": "^7.1.1",
+    "babel-preset-es2015": "^6.24.1",
     "webpack": "^3.4.1"
   }
 }
